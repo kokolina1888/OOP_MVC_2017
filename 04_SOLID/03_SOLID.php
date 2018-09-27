@@ -23,8 +23,8 @@ Class Rectangle {
     }
 
     function area() {
-    return $this->width * $this->height;
-}
+        return $this->width * $this->height;
+    }
 
 }
 
@@ -65,9 +65,9 @@ $client = new Client();
 
 //1
 
-$client->areaVerifier($rectangle);
-//no error
-var_dump($client->areaVerifier($rectangle));
+// $client->areaVerifier($rectangle);
+// //no error
+// var_dump($client->areaVerifier($rectangle));
 //returns true
 
 //2
@@ -77,51 +77,51 @@ $client->areaVerifier($square);
 
 //Usage
 
-// class Vehicle {
+class Vehicle {
  
-//     function startEngine() {
-//         // Default engine start functionality
-//     }
+    function startEngine() {
+        // Default engine start functionality
+    }
  
-//     function accelerate() {
-//         // Default acceleration functionality
-//     }
-// }
+    function accelerate() {
+        // Default acceleration functionality
+    }
+}
 
-// class Car extends Vehicle {
+class Car extends Vehicle {
  
-//     function startEngine() {
-//         $this->engageIgnition();
-//         parent::startEngine();
-//     }
+    function startEngine() {
+        $this->engageIgnition();
+        parent::startEngine();
+    }
  
-//     private function engageIgnition() {
-//         // Ignition procedure
-//     }
+    private function engageIgnition() {
+        // Ignition procedure
+    }
  
-// }
+}
 
-// class ElectricBus extends Vehicle {
+class ElectricBus extends Vehicle {
  
-//     function accelerate() {
-//         $this->increaseVoltage();
-//         $this->connectIndividualEngines();
-//     }
+    function accelerate() {
+        $this->increaseVoltage();
+        $this->connectIndividualEngines();
+    }
  
-//     private function increaseVoltage() {
-//         // Electric logic
-//     }
+    private function increaseVoltage() {
+        // Electric logic
+    }
  
-//     private function connectIndividualEngines() {
-//         // Connection logic
-//     }
+    private function connectIndividualEngines() {
+        // Connection logic
+    }
  
-// }
+}
 
-// class Driver {
-//     function go(Vehicle $v) {
-//         $v->startEngine();
-//         $v->accelerate();
-//     }
-// }
+class Driver {
+    function go(Vehicle $v) {
+        $v->startEngine();
+        $v->accelerate();
+    }
+}
 
